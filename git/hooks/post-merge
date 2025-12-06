@@ -1,0 +1,5 @@
+#!/bin/bash
+ branch = $(git rev-parse --abbrev-ref HEAD)
+if ["$branche" = "main"];then
+   echo "Fusion dans main le $(date)" >> .git/merge-log.txt
+fi
