@@ -1,0 +1,14 @@
+#!/bin/bash
+
+dirs=$(ls -d */)
+
+for i in $dirs; do
+  if [ -d "$i" ]; then
+    if [ -f "$i/README.md" ]; then
+      echo " $i contient un README.md"
+    else
+      echo " Erreur : $i n'a pas de README.md"
+      exit 1
+    fi
+  fi
+done
