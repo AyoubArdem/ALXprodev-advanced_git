@@ -29,10 +29,6 @@ git push origin develop
 ## 1) Creating a feature branch
 
 
-* commit message: `feat: scaffolding login page`
-* push
-
-
 ```bash
 
 git checkout develop
